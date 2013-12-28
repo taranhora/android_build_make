@@ -962,4 +962,7 @@ endif
 ## last, to avoid accidental resetting by device configs
 $(eval include vendor/nitrogen/sepolicy/sepolicy.mk)
 
+# Rules for QCOM targets
+include $(TOPDIR)vendor/nitrogen/config/qcom_target.mk
+
 include $(BUILD_SYSTEM)/dumpvar.mk
