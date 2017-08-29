@@ -808,6 +808,20 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   if HasVendorPartition(input_zip):
     system_progress -= 0.1
 
+  model = target_info.GetBuildProp("ro.product.model")
+  build = target_info.GetBuildProp("ro.build.date")
+
+  script.Print("- Nitrogen Project ---------------------------");
+  script.Print("*  * *** *** **** **** **** *** *  *  **** ***");
+  script.Print("** *  *   *  *  * *  * *    *   ** *  *  * *");
+  script.Print("* **  *   *  **** *  * * ** *** * **  *  * ***");
+  script.Print("*  *  *   *  * *  *  * *  * *   *  *  *  *   *");
+  script.Print("*  * ***  *  * *  **** **** *** *  *  **** ***");
+  script.Print("- By xyyx -------------------- Android 9.0.0 -");
+  script.Print(" Compiled: %s "%(build));
+  script.Print(" For: %s   "%(model));
+  script.Print("----------------------------------------------");
+
   script.ShowProgress(system_progress, 0)
 
   # See the notes in WriteBlockIncrementalOTAPackage().
