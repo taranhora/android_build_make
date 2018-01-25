@@ -40,6 +40,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     ExternalStorageProvider \
     FusedLocation \
+    GBoardDarkTheme \
+    GBoardBlackTheme \
     InputDevices \
     KeyChain \
     Keyguard \
