@@ -34,8 +34,8 @@ PRODUCT_PACKAGES += \
     DeskClock \
     DocumentsUI \
     DownloadProviderUi \
-    DuiBlackThemeOverlay \
-    DuiDarkThemeOverlay \
+    SystemUiBlackThemeOverlay \
+    SystemUiDarkThemeOverlay \
     Email \
     ExactCalculator \
     ExternalStorageProvider \
