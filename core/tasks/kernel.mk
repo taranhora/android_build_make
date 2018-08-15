@@ -114,10 +114,10 @@ KERNEL_HEADER_DEFCONFIG := $(KERNEL_DEFCONFIG)
 endif
 
 ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
-$(error BOARD_KERNEL_IMAGE_NAME not defined.)
+$(info BOARD_KERNEL_IMAGE_NAME not defined.)
 endif
 ifneq ($(TARGET_USES_UNCOMPRESSED_KERNEL),)
-$(error TARGET_USES_UNCOMPRESSED_KERNEL is deprecated.)
+$(info TARGET_USES_UNCOMPRESSED_KERNEL is deprecated.)
 endif
 ifneq ($(TARGET_KERNEL_APPEND_DTB),)
 $(warning TARGET_KERNEL_APPEND_DTB is deprecated.)
